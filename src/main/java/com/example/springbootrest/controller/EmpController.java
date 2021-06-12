@@ -8,10 +8,12 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.springbootrest.model.Emp;
 import com.example.springbootrest.service.EmpService;
 
+@RestController
 @RequestMapping("emp")
 public class EmpController {
 	@Autowired
