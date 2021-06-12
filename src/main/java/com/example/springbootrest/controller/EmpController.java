@@ -17,7 +17,7 @@ public class EmpController {
 	@Autowired
 	private EmpService empService;
 	
-	//모든 사원 조회
+	//모든 사원 조회, localhost:8080/emp
 	@GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE})
 	public ResponseEntity<List<Emp>> getAllEmps(){
 		List<Emp> emps = empService.findAll();

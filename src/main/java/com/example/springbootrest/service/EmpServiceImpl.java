@@ -29,7 +29,7 @@ public class EmpServiceImpl implements EmpService{
 	@Override
 	public Emp findById(int empno) {
 		Emp emp = empRepository.findById(empno).orElseThrow(() -> new ResourceNotFoundException("Emp", "empno", empno));
-		return null;
+		return emp;
 	}
 	@Override
 	public List<Emp> findBySalBetween(int sal1, int sal2) {
